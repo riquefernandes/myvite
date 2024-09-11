@@ -4,7 +4,8 @@ function show(){
     return msg.innerHTML = "Olá"
 }
 
-const test = ()=>{
+function test(){
     show()
 }
 
+window.test = test;
