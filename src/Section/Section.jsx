@@ -1,14 +1,23 @@
+import { useState } from 'react'
 import './Section.css'
 
 
 function Section(){
 
+const [count, setCount] = useState(0)
+
+const teste = ()=>{
+    setCount(oi => oi + 1)
+}
+
 return (
 
-    <div className="container" >
-    <input type="text" className="input" placeholder="blabla"/>
-    <h1 className="h1" ></h1>
-</div>
+    <>
+    <button onClick={teste} >teste</button>
+    <p>{count}</p>
+
+    </>
+
 
 
 )}
